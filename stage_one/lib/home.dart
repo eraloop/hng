@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 class Home extends StatefulWidget {
-  const Home({super.key});
+  // const Home({super.key});
 
   @override
   State<Home> createState() => _HomeState();
@@ -11,22 +11,26 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(vertical: 50),
-        child: Center(
+      body: Container(
+        alignment: Alignment.center,
+        color: Colors.white,
+        height: double.infinity,
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(vertical: 50),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
+            // mainAxisSize: MainAxisSize.min,
             children: [
              Container(
-               height: 160, width: 160,
                decoration: BoxDecoration(
                    borderRadius: BorderRadius.circular(100),
                    border: Border.all(color: const Color(0xffed4c4e), width: 5)
                ),
                child: ClipRRect(
                    borderRadius: BorderRadius.circular(100),
-                   child: Image.asset("assets/images/profile.png", fit: BoxFit.cover,)),
+                   child: Image.asset("assets/images/profile.png", height: 160, width: 160, fit: BoxFit.cover,)),
              ),
 
              Padding(
@@ -45,7 +49,7 @@ class _HomeState extends State<Home> {
 
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 20,),
-                margin: const EdgeInsets.symmetric(vertical: 40),
+                margin: const EdgeInsets.symmetric(vertical: 50),
                 decoration: BoxDecoration(
                   color: const Color(0xff410603),
                   borderRadius: BorderRadius.circular(30),

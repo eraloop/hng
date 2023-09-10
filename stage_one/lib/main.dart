@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
               // fontFamily: 'Montserrat',
               height: 1.5,
               fontStyle: FontStyle.normal,
-              fontWeight: FontWeight.w300,
+              fontWeight: FontWeight.w500,
               fontSize: 16
           ),
 
