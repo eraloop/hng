@@ -1,4 +1,4 @@
-package com.hng.stageone
+package com.hng.stagetwo
 
 import io.flutter.embedding.android.FlutterActivity
 
