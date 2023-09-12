@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stage_one/cv.dart';
+import 'package:stage_two/cv.dart';
 
 class HomeEdit extends StatefulWidget {
   const HomeEdit({ required this.userCv});

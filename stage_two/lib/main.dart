@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stage_one/spashscreen.dart';
+import 'package:stage_two/spashscreen.dart';
+import 'package:stage_two/spashscreen.dart';
 
 void main() {
   runApp(const MyApp());

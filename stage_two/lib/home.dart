@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stage_one/cv.dart';
-import 'package:stage_one/home_edit.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:stage_two/cv.dart';
+import 'package:stage_two/home_edit.dart';
 class Home extends StatefulWidget {
 
   @override
@@ -19,10 +18,6 @@ class _HomeState extends State<Home> {
         builder: (context) => HomeEdit(userCv: userCv),
       ),
     );
-    // print(updatedCv.fname);
-    // print(updatedCv.sname);
-    // print(updatedCv.ghandle);
-    // print(updatedCv.bio);
 
     if(updatedCv != null ){
       setState(() {
@@ -33,11 +28,6 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    // if(updatedCv != null ){
-    //   setState(() {
-    //     userCv = updatedCv;
-    //   });
-    // }
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
